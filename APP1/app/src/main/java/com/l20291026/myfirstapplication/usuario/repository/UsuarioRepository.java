@@ -16,7 +16,7 @@ public class UsuarioRepository {
     private UsuarioRepository(){
         Usuario u1= new Usuario("user1", "11234","Lala", 25,"lala@gmail.com");
         Usuario u2= new Usuario("user2","21234", "lulu",23,"lulu@gmail.com");
-        Usuario u3 = new Usuario("user3","31234","lilo",18,"lilo@gmail.com");
+        Usuario u3= new Usuario("user3","1234","lilo",18,"lilo@gmail.com");
 
         this.registerUsers= new HashMap<String,HashMap<String,Usuario>>();
         //agregar los datos a hash map

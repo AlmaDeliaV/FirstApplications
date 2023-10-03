@@ -2,6 +2,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".usuario.DashboardUsuario">
@@ -52,6 +54,7 @@
 
     <EditText
         android:id="@+id/etUser"
+
         android:layout_width="wrap_content"
         android:layout_height="48sp"
         android:layout_marginTop="52dp"
@@ -62,6 +65,19 @@
         app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toEndOf="@+id/tvUser"
         app:layout_constraintTop_toBottomOf="@+id/tvHola" />
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
 
     <TextView
         android:id="@+id/tvEmail"
@@ -78,10 +94,9 @@
         android:id="@+id/tvHola"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="192dp"
         android:text="@string/tvHola"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -128,13 +143,25 @@
         android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="48sp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.369"
         app:layout_constraintStart_toEndOf="@+id/tvEmail"
         app:layout_constraintTop_toBottomOf="@+id/etAge" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="74dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </android.support.constraint.ConstraintLayout>
